@@ -130,7 +130,7 @@
 
 		<div class="ktCpJoinBtn">
 			<!-- <p class="agreeAlert">필수약관 동의해주세요.</p> -->
-			<button type="button">
+			<button type="button" disabled="true">
 				<strong>무료서비스 약관동의</strong>
 			</button>
 		</div>
@@ -199,9 +199,37 @@ $(document).ready(function(){
 })
 
 
-let wrap = document.querySelector(".wrap");
-let cpJoinWrap = document.querySelector(".cpJoinWrap");
-console.log(cpJoinWrap.clientHeight);
+
+/* 기획 담당자에게 보여주기위한 임시 스크립트 입니다.(사용불가) */
+const ktCpAgreeWrap = document.querySelector(".ktCpAgreeWrap");
+
+let agree_all = document.querySelector(".agree_item.all input[type='checkbox']");
+let agree_items = document.querySelectorAll(".agree_item.item input[type='checkbox']");
+let btnSubmit = document.querySelector(".ktCpJoinBtn button");
+
+agree_all.addEventListener("click", function(){
+	const chkAll = this.checked;
+	if(chkAll) {
+		chkAction(agree_items, true);
+		btnSubmit.disabled = false;
+	} else {
+		chkAction(agree_items, false);
+		btnSubmit.disabled = true;
+	}
+})
+
+
+// 필수항목 일괄 선택/해제 하기
+function chkAction(ele, flag_type){
+	const flag = flag_type;
+	ele.forEach(function(item){
+		if(flag == false) { // 해제일 경우 [필수,선택] 둘다 해제
+			item.checked = flag;
+			return false;
+		}
+		item.checked = flag;
+	})
+}
 </script>
 
 </body>
