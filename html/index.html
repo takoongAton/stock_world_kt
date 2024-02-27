@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>KT PASS 해외주식정보</title>
+<style type="text/css">
+body {margin:0; padding:30px 20px 20px 20px; font-family:Tahoma, Sans-Serif; font-size:12px; color:#333; line-height:1;}
+h1, p, ul, th, td {margin:0; padding:0;}
+ul, li {list-style-type:none;}
+
+h1 {margin:0 0 10px 0; font-size:17px;}
+h1 > span {margin-left:10px; font-size:13px; font-weight:normal;}
+.quick *{float:left; vertical-align:middle;}
+.quick {position:fixed; right:0; top:0; padding:5px 10px; background-color:#ddd;}
+.quick p {font-weight:bold;}
+.quick li {margin:0 0 0 8px;}
+.quick li span {display:block; width:5px; padding:0 0 0 8px;}
+.link-guide {display:block; margin-bottom:10px; text-decoration:underline; font-size:13px;}
+a {color:#028086; text-decoration:underline;}
+a:hover {color:#028086; text-decoration:none;}
+a.active {color:red; font-weight:bold;}
+table {width:100%; border-collapse:collapse; border:1px solid #666;}
+tr.line1 {border-top:2px solid #666;}
+th, td {vertical-align:middle; padding:5px 0; font-size:13px;}
+th {padding:6px; font-size:12px; text-align:center; color:#fff; border:1px solid #666; background-color:var(--main-color); font-weight:normal;}
+td {padding:4px 4px 4px 10px; text-align:left; border:1px solid #eee; background-color:#fff; line-height:1.4;}
+td.chk {padding:4px 4px 4px 4px; text-align:center;}
+td p {margin:10px 0 5px 0;}
+tr:hover td{background-color:#eee;}
+.done {color:#ca0404;}
+.ing {color:#028086;}
+.notice {padding:3px 0 10px 0; text-align:right; color:#ff0303; line-height:1.4;}
+
+:root {
+	--main-color:#20bc7d;
+}
+</style>
+	<script type="text/javascript" src="/js/lib/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var $lists = $('.menulist td').addClass('dir');
+			$lists
+				.find('td a')
+				.each(function(index){
+					var links = $(this).text();
+					$(this).attr('href', links).attr('target','_blank');
+
+				})
+				.end();
+			
+			//선택한거 파일 확인
+			$('a').on('click', function(){
+				$('a').removeClass('active');
+				$(this).addClass('active');
+			});
+		});
+	</script>
+</head>
+<!-- html body -->
+<body>
+<h1>KT PASS 해외주식정보</h1>
+
+<table class="menulist">
+	<colgroup>
+		<col width="15%">
+		<col width="15%">
+		<col width="15%">
+		<col width="15%">
+		<col width="15%">
+		<col width="">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">화면ID</th>
+			<th scope="col">Depth 1</th>
+			<th scope="col">Depth 1</th>
+			<th scope="col">Depth 1</th>
+			<th scope="col">파일명</th>
+			<th scope="col">비고</th>
+		</tr>
+	</thead>
+	<tbody>
+	<!-- <tr>
+		<td colspan="9" class="chk done dir"><strong>0924 : 디자인 검수 요청</strong> 0926 : 디자인 검수 완료 <br> 1004 : 기획 변경 및 추가 수정완료</td>
+	</tr> -->
+<!-- 
+		<tr class="line1">
+			<td>GSSSSSS</td>
+			<td>ㅇㅇㅇ</td>
+			<td>ㅇㅇㅇ</td>
+			<td>ㅇㅇㅇ</td>
+			<td><a target="_blank" href="./page/ㅇㅇㅇㅇ.html">ㅇㅇㅇ.html</a></td>
+			<td>-</td>
+		</tr>
+-->
+
+		<tr class="line1">
+			<td>FH_0001</td>
+			<td>홈</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./FH_홈/FH_0001.html">FH_0001.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td>상단 배너</td>
+			<td>로보AI 포트폴리오</td>
+			<td><a target="_blank" href="./page/bnr_page1.html">bnr_page1.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>성공적인 투자전략</td>
+			<td><a target="_blank" href="./page/bnr_page2.html">bnr_page2.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>특징종목</td>
+			<td><a target="_blank" href="./page/bnr_page3.html">bnr_page3.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>분석리포트</td>
+			<td><a target="_blank" href="./page/bnr_page4.html">bnr_page4.html</a></td>
+			<td>-</td>
+		</tr>
+
+		
+
+
+
+
+
+		<!-- 투자전략 -->
+		<tr class="line1">
+			<td>FP_0001</td>
+			<td>투자전략</td>
+			<td>통합메인</td>
+			<td>목록</td>
+			<td><a target="_blank" href="./FP_투자전략/FP_0001.html">FP_0001.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FP_0002</td>
+			<td></td>
+			<td>상세_포트폴리오</td>
+			<td>유효회원</td>
+			<td><a target="_blank" href="./FP_투자전략/FP_0002.html">FP_0002.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>FP_0002_01</td>
+			<td></td>
+			<td></td>
+			<td>무료회원</td>
+			<td><a target="_blank" href="./FP_투자전략/FP_0002_01.html">FP_0002_01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td>상세_포트폴리오</td>
+			<td>상세보기 레이어팝업</td>
+			<td><a target="_blank" href="./FP_투자전략/FP_0002_layer.html">FP_0002_layer.html</a></td>
+			<td>-</td>
+		</tr>
+		<!-- <tr class="">
+			<td>GFPㅇㅇㅇㅇ</td>
+			<td></td>
+			<td>ㅇㅇㅇㅇ</td>
+			<td></td>
+			<td><a target="_blank" href="./FP_투자전략/ㅇㅇㅇㅇ.html">ㅇㅇㅇㅇ.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>GFPㅇㅇㅇㅇ</td>
+			<td></td>
+			<td>ㅇㅇㅇㅇ</td>
+			<td></td>
+			<td><a target="_blank" href="./FP_투자전략/ㅇㅇㅇㅇ.html">ㅇㅇㅇㅇ.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>GFPㅇㅇㅇㅇ</td>
+			<td></td>
+			<td>ㅇㅇㅇㅇ</td>
+			<td></td>
+			<td><a target="_blank" href="./FP_투자전략/ㅇㅇㅇㅇ.html">ㅇㅇㅇㅇ.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>GFPㅇㅇㅇㅇ</td>
+			<td></td>
+			<td>ㅇㅇㅇㅇ</td>
+			<td></td>
+			<td><a target="_blank" href="./FP_투자전략/ㅇㅇㅇㅇ.html">ㅇㅇㅇㅇ.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr class="">
+			<td>GFPㅇㅇㅇㅇ</td>
+			<td></td>
+			<td>ㅇㅇㅇㅇ</td>
+			<td></td>
+			<td><a target="_blank" href="./FP_투자전략/ㅇㅇㅇㅇ.html">ㅇㅇㅇㅇ.html</a></td>
+			<td>-</td>
+		</tr> -->
+
+
+
+
+		<!-- 특징정목 -->
+		<tr class="line1">
+			<td>FI_0001</td>
+			<td>특징정목</td>
+			<td>통합 메인</td>
+			<td></td>
+			<td><a target="_blank" href="./FI_특징종목/FI_0001.html">FI_0001.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>FI_0002</td>
+			<td></td>
+			<td>상승률 상위</td>
+			<td></td>
+			<td><a target="_blank" href="./FI_특징종목/FI_0002.html">FI_0002.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>FI_0003</td>
+			<td></td>
+			<td>인기 검색 종목</td>
+			<td>리스트</td>
+			<td><a target="_blank" href="./FI_특징종목/FI_0003.html">FI_0003.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>FI_0003_1</td>
+			<td></td>
+			<td></td>
+			<td>검색시</td>
+			<td><a target="_blank" href="./FI_특징종목/FI_0003.html"><del>FI_0003_1.html</del> 리스트와 동일</a></td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>FI_0003_2</td>
+			<td></td>
+			<td></td>
+			<td>결과없음</td>
+			<td><a target="_blank" href="./FI_특징종목/FI_0003_2.html">FI_0003_2.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>FI_0004</td>
+			<td></td>
+			<td>인기 테마주</td>
+			<td>목록</td>
+			<td><a target="_blank" href="./FI_특징종목/FI_0004.html">FI_0004.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>FI_0005</td>
+			<td></td>
+			<td></td>
+			<td>상세 (유료회원)</td>
+			<td><a target="_blank" href="./FI_특징종목/FI_0005.html">FI_0005.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>FI_0005_2</td>
+			<td></td>
+			<td></td>
+			<td>상세 (무료회원)</td>
+			<td><a target="_blank" href="./FI_특징종목/FI_0005_2.html">FI_0005_2.html</a></td>
+			<td>-</td>
+		</tr>
+
+		
+
+
+		<!-- 리포트 -->
+		<tr class="line1">
+			<td>FR_0001</td>
+			<td>리포트</td>
+			<td>통합 메인</td>
+			<td></td>
+			<td><a target="_blank" href="./FR_리포트/FR_0001.html">FR_0001.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>FR_0002</td>
+			<td></td>
+			<td>종목 리포트</td>
+			<td></td>
+			<td><a target="_blank" href="./FR_리포트/FR_0002.html">FR_0002.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>FR_0003</td>
+			<td></td>
+			<td>산업 이슈</td>
+			<td>유료회원</td>
+			<td><a target="_blank" href="./FR_리포트/FR_0003.html">FR_0003.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>FR_0003_2</td>
+			<td></td>
+			<td></td>
+			<td>무료회원</td>
+			<td><a target="_blank" href="./FR_리포트/FR_0003_2.html">FR_0003_2.html</a></td>
+			<td>-</td>
+		</tr>
+
+
+
+
+
+		
+		<!-- 약관 -->
+		<tr class="line1">
+			<td>FF_0001</td>
+			<td>Footer</td>
+			<td>이용약관</td>
+			<td></td>
+			<td><a target="_blank" href="./FF_약관/FF_0001.html">FF_0001.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>FF_0002</td>
+			<td></td>
+			<td>개인정보처리방침</td>
+			<td></td>
+			<td><a target="_blank" href="./FF_약관/FF_0002.html">FF_0002.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>FF_0003</td>
+			<td></td>
+			<td>투자유의사항</td>
+			<td></td>
+			<td><a target="_blank" href="./FF_약관/FF_0003.html">FF_0003.html</a></td>
+			<td>-</td>
+		</tr>
+
+
+
+		<tr class="line1">
+			<td></td>
+			<td>모달팝업</td>
+			<td>경고</td>
+			<td>팝업1</td>
+			<td><a target="_blank" href="./modal/alert01.html">alert01.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>-</td>
+			<td>팝업2</td>
+			<td><a target="_blank" href="./modal/alert02.html">alert02.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>-</td>
+			<td>팝업3</td>
+			<td><a target="_blank" href="./modal/alert03.html">alert03.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>-</td>
+			<td>팝업4</td>
+			<td><a target="_blank" href="./modal/alert04.html">alert04.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>달력</td>
+			<td>-</td>
+			<td><a target="_blank" href="./modal/modal_calender.html">modal_calender.html</a></td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>이벤트팝업</td>
+			<td>-</td>
+			<td>-</td>
+			<td><a target="_blank" href="./event/event_sample.html">event_sample.html</a></td>
+			<td>-</td>
+		</tr>
+
+		<tr class="line1">
+			<td>BP_0001</td>
+			<td>브릿지페이지</td>
+			<td></td>
+			<td></td>
+			<td><a target="_blank" href="./../bridge/html/bridge.html">bridge.html</a></td>
+			<td>별도 전달</td>
+		</tr>
+
+		<tr class="line1">
+			<td></td>
+			<td>가입창</td>
+			<td></td>
+			<td>무료</td>
+			<td><a target="_blank" href="./../kt_cp_join/html/join_free.html">join_free.html</a></td>
+			<td>별도 전달</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>유료</td>
+			<td><a target="_blank" href="./../kt_cp_join/html/join_charged.html">join_charged.html</a></td>
+			<td>별도 전달</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>신규</td>
+			<td>무료</td>
+			<td><a target="_blank" href="./../kt_cp_join/html/join_free_new.html">join_free.html</a></td>
+			<td>별도 전달</td>
+		</tr>
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>유료</td>
+			<td><a target="_blank" href="./../kt_cp_join/html/join_charged_new.html">join_charged.html</a></td>
+			<td>별도 전달</td>
+		</tr>
+
+
+
+
+		
+<!--
+		<tr class="line1">
+			<td>GSSSSSS</td>
+			<td>ㅇㅇㅇ</td>
+			<td>ㅇㅇㅇ</td>
+			<td>ㅇㅇㅇ</td>
+			<td><a target="_blank" href="./page/ㅇㅇㅇㅇ.html">ㅇㅇㅇ.html</a></td>
+			<td>-</td>
+		</tr>
+-->
+
+	</tbody>
+</table>
+</body>
+<!-- //html body -->
+</html>

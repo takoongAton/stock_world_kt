@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>KT PASS 해외주식정보</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+	<meta name="description" content="설명설명설명">
+
+	<meta property="og:type" content="website"> 
+	<meta property="og:title" content="타이틀타이틀">
+	<meta property="og:description" content="설명설명설명">
+	<meta property="og:image" content="../../images/common/stock_meta.png">
+	<meta property="og:url" content="https://www.www.www.www/">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="타이틀타이틀">
+	<meta name="twitter:description" content="설명설명설명">
+	<meta name="twitter:image" content="../../images/common/logo_stock.png">
+	<meta name="twitter:domain" content="https://www.www.www.www/">
+
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/common_kt.css">
+	<link rel="stylesheet" href="../../css/stock_world_kt.css">
+	<link rel="stylesheet" href="../../css/test.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../../images/common/favicon.ico">
+</head>
+<body>
+
+
+<div class="layer modal" style="display:block;">
+	<div class="layer_dim"></div>
+	<div class="layer_inner">
+		
+		<div class="calender">
+			<!-- <div class="month">
+				<button class="prev"><span>이전</span></button>
+				<div class="tit">
+					<strong>2021년 1월 1주</strong>
+					<span>2022.00.00 ~ 2022.00.00</span>
+				</div>
+				<button class="next" disabled><span>다음</span></button>
+			</div> -->
+
+			<div class="date-picker">
+				<button class="prev"><span>이전</span></button>
+				<div class="tit">
+					<strong>2021년 1월 1주</strong>
+				</div>
+				<button class="next" disabled><span>다음</span></button>
+				<!-- <button class="btn_picker"><span>달력보기</span></button> -->
+			</div>
+
+			<ul class="week">
+				<li>일</li>
+				<li>월</li>
+				<li>화</li>
+				<li>수</li>
+				<li>목</li>
+				<li>금</li>
+				<li>토</li>
+			</ul>
+			<ul class="day">
+				<li><span>29</span></li>
+				<li><span>30</span></li>
+				<li><span>1</span></li>
+				<li><span>2</span></li>
+				<li><span>3</span></li>
+				<li><span>4</span></li>
+				<li><span>5</span></li>
+				<li><span>6</span></li>
+				<li><span>7</span></li>
+				<li><span>8</span></li>
+				<li><span>9</span></li>
+				<li><span>10</span></li>
+				<li><span>11</span></li>
+				<li><span>12</span></li>
+				<li><span>13</span></li>
+				<li><span>14</span></li>
+				<li><span>15</span></li>
+				<li><span>16</span></li>
+				<li><span>17</span></li>
+				<li><span>18</span></li>
+				<li><span>19</span></li>
+				<li><span>29</span></li>
+				<li><span>21</span></li>
+				<li><span>22</span></li>
+				<li><span>23</span></li>
+				<li><span>24</span></li>
+				<li><span>25</span></li>
+				<li><span>26</span></li>
+				<li><span>27</span></li>
+				<li><span>28</span></li>
+				<li><span>29</span></li>
+				<li><span>30</span></li>
+				<li><span>31</span></li>
+				<li><span>1</span></li>
+				<li><span>2</span></li>
+			</ul>
+		</div>
+
+		<div class="modal_btn">
+			<div><button type="button" class="close"><span>취소</span></button></div>
+			<div><button type="button" class="next"><span>확인</span></button></div>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="../js/jquery-1.12.4.min.js"></script> -->
+
+<script src="../../js/temp.js"></script>
+<script>
+
+$(function(){
+
+	/* 딤 클릭시 팝업 닫기 */
+	$(".layer .layer_dim").on("click", function(){
+		$(this).parents('.layer').hide();
+	})
+
+	$("li").on("click", function(){
+		$(this).siblings().removeClass("active");
+		$(this).addClass("active");
+	})
+
+
+})
+</script>
+</body>
+</html>

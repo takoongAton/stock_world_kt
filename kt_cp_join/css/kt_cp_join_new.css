@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+
+header {position:-webkit-sticky; position:sticky; position:relative; top:0; min-height:3em; margin-bottom:1.25em; background-color:#fff; z-index:0; /*transition:all 0.2s;*/}
+header h1 {height:3em; text-align:center; line-height:3em;}
+header.active {position:relative;}
+header.active div.inner {box-shadow:0 3px 6px rgba(0,0,0,0.06);}
+header div.inner {position:fixed; top:0; left:0; width:100%; background-color:#fff;}
+header .util-btn {position:absolute; top:0; width:3em; height:3em; background-color:#ff6600; color:#fff;}
+header .util-btn.prev,
+header .util-btn.back {left:0;}
+header .util-btn.close {right:0;}
+header .util-btn button {width:100%; height:100%; background-color:#fff;}
+header .util-btn button span {position: relative;}
+header .util-btn button span img {width:20px; height:20px;}
+
+header .util-btn.prev button::before, 
+header .util-btn.back button::before {content:""; position:absolute; top:50%; left:50%; width:22.91666%; height:22.91666%; border-width:2px 0 0 2px; border-style:solid; border-color:#222; transform: rotate(-45deg) translate(-31.25%, -31.25%); transform-origin: left top;}
+
+header .util-btn.close button::before, 
+header .util-btn.close button::after {content:""; position:absolute; top:50%; left:50%; width:40%; height:2px; background-color:#222; border-radius:100px;}
+header .util-btn.close button::before {transform:translate(-50%,-50%) rotate(45deg)}
+header .util-btn.close button::after {transform:translate(-50%,-50%) rotate(-45deg)}
+
+@media screen and (min-width:750px) {
+	header div.inner {width:750px; left:50%; transform:translateX(-50%);}
+}
+
+
+.layer.agree header {position:-webkit-sticky; position:sticky; position:relative; top:0; min-height:3em; margin-bottom:1.25em; background-color:#fff; z-index:0; /*transition:all 0.2s;*/}
+.layer.agree header h1 {height:3em; text-align:center; line-height:3em;}
+
+/* 해외주식정보 무료가입 */
+.cpJoinFree_layer {position:fixed; bottom:0; left:0; right:0; max-width:720px; margin:0 auto; padding:19px 17px 13px; background-color:#fff; border-radius:10px 10px 0 0; overflow:hidden; z-index:11;}
+
+.cpJoinFree_layer .cpJoinWrap {max-width:720px; margin:0 auto; font-family:'Noto Sans KR';}
+.cpJoinFree_layer .cpJoinWrap .cpJoinContent {}
+.cpJoinFree_layer .cpJoinWrap .cpJoinContent p.tit {color:#232323; font-size:16.6px; line-height:1.16em; font-weight:500; word-break:keep-all;}
+.cpJoinFree_layer .cpJoinWrap .cpJoinContent p.price {margin-top:19px; color:rgb(234,39,58); font-size:13px;}
+.cpJoinFree_layer .cpJoinWrap .ktCpAgreeWrap {}
+.cpJoinFree_layer .cpJoinWrap .ktCpAgreeWrap > div {margin-top:24px;}
+.cpJoinFree_layer .cpJoinWrap .ktCpAgreeWrap ul {margin-top:7px; margin-bottom:12px;}
+.cpJoinFree_layer .cpJoinWrap .ktCpAgreeWrap ul li + li {margin-top:5px;}
+.cpJoinFree_layer .cpJoinWrap .agree_item {display:flex; align-items:center; gap:7px; position:relative; width:100%;}
+.cpJoinFree_layer .cpJoinWrap .agree_item input[type="checkbox"] {position:absolute; opacity:0; z-index:-1;}
+.cpJoinFree_layer .cpJoinWrap .agree_item span.checkmark {display:block; width:24px; height:24px; background:url('../images/terms_check_off.png') no-repeat center / 12px 8.6px;}
+.cpJoinFree_layer .cpJoinWrap .agree_item input[type="checkbox"]:checked + span.checkmark {background-image:url('../images/terms_check_on.png');}
+.cpJoinFree_layer .cpJoinWrap .agree_item span.txt {display:flex; flex:1; align-items:center; min-height:36px; padding-right:33px;}
+.cpJoinFree_layer .cpJoinWrap .agree_item span.txt {color:#232323; font-size:12px; font-weight:500; word-break:keep-all;}
+.cpJoinFree_layer .cpJoinWrap .agree_item.all {}
+.cpJoinFree_layer .cpJoinWrap .agree_item.all span.txt {display:inline-flex; padding-right:0; color:#363636; font-size:15px; font-weight:500;}
+.cpJoinFree_layer .cpJoinWrap .agree_item.all strong {display:inline-flex; color:red; font-size:15px; font-weight:500;}
+.cpJoinFree_layer .cpJoinWrap .agree_item.all span.checkmark {width:23px; height:24px; background:url('../images/terms_check_all_off.png') no-repeat center / 24px;}
+.cpJoinFree_layer .cpJoinWrap .agree_item.all input[type="checkbox"]:checked + span.checkmark {background-image:url('../images/terms_check_all_on.png');}
+
+.cpJoinFree_layer .cpJoinWrap .agree_item.item span.txt {background:url('../images/join_arr_g.png') no-repeat right center / 6px 10px;}
+.cpJoinFree_layer .cpJoinWrap .agree_item.all.charged {border:0 none;}
+.cpJoinFree_layer .cpJoinWrap .agree_item.all.charged span.txt {background:url('../images/Popup_pay_icon_arrow@3x.png') no-repeat right center / 33px;}
+
+.ktCpJoinBtn {width:100%; max-width:720px; text-align:center;}
+.ktCpJoinBtn p {display:inline-block; width:80%; margin:0 0 1em; padding:1em; background-color:#7f7f7f; border-radius:100px; color:#fff; font-size:0.875em;}
+.ktCpJoinBtn button {width:100%; min-height:50px; background-color:#4d3dd3; border-radius:5px; color:#fff;}
+.ktCpJoinBtn button:disabled {background-color:#E9E9EA; color:#989898;}
+.ktCpJoinBtn button span,
+.ktCpJoinBtn button strong {display:block; font-size:16.6px; font-weight:700;}
+@media screen and (min-width:720px) {
+	/* .ktCpJoinBtn {left:50%; transform:translateX(-50%);} */
+}
+/* 해외주식정보 무료가입 */
+
+
+
+/* 해외주식정보 유료가입 */
+.cp_join_wrap {max-width:720px; margin:0 auto;}
+.cpJoinCharge { padding:26px 16px 63px;}
+.cpJoinCharge .cpJoinContent {text-align:center;}
+.cpJoinCharge .cpJoinContent p.tit {color:#232323; font-size:16.6px; line-height: 1.15em; font-weight:500;}
+.cpJoinCharge .cpJoinContent p.price {margin-top:8px; color:#EA273A; line-height:1em;}
+.cpJoinCharge .cpJoinContent p.price strong {display:block; font-size:15px; font-weight:500;}
+.cpJoinCharge .cpJoinContent p.price span {display:block; font-size:13.3px; font-weight:500;}
+.cpJoinCharge .joinguide {margin-top:31px; margin-bottom:18px; padding:25px 18px; border:1px solid #ddd; border-radius:5px;}
+.cpJoinCharge .joinguide li {display:flex; gap:19px;}
+.cpJoinCharge .joinguide li + li {margin-top:37px;}
+.cpJoinCharge .joinguide li span {min-width:24px;}
+.cpJoinCharge .joinguide li span img {width:24px; height:24px;}
+.cpJoinCharge .joinguide li p {color:#4C4C4C; font-size:15px; line-height:1.17777em; word-break:keep-all;}
+
+.cp_join_wrap .agree_item {display:flex; align-items:center; gap:7px; position:relative; width:100%;}
+.cp_join_wrap .agree_item input[type="checkbox"] {position:absolute; opacity:0; z-index:-1;}
+.cp_join_wrap .agree_item span.checkmark {display:block; width:24px; height:24px; background:url('../images/btn_checkbox_off.png') no-repeat center / 16px;}
+.cp_join_wrap .agree_item input[type="checkbox"]:checked + span.checkmark {background-image:url('../images/btn_checkbox_on.png');}
+.cp_join_wrap .agree_item span.txt {display:flex; flex:1; align-items:center; min-height:36px; padding-right:33px;}
+.cp_join_wrap .agree_item span.txt {background:url('../images/join_arr_g.png') no-repeat right center / 6px 10px; color:#232323; font-size:12px; font-weight:500; word-break:keep-all;}
+
+.cp_join_wrap .ktCpJoinBtn {position:fixed; bottom:0; left:0; right:0; width:100%; max-width:720px; margin:0 auto; padding:0 17px 13px;}
+/* // 해외주식정보 유료가입 */
+
+
+div.layer {display:none;}
+div.layer_dim {position:fixed; top:0; right:0; bottom:0; left:0; height:100vh; background-color:rgba(0,0,0,0.5); /* animation-name:ani_opacity; animation-duration:0.2s; animation-iteration-count:1; */  z-index:10;}
+@keyframes ani_opacity { 0% {opacity:0;} 100% {opacity:1;} }
+
+/* 전체화면 팝업 */
+div.layer.agree {position:fixed; top:0; right:0; bottom:0; left:0; max-height:100vh; z-index:10000; overflow-y:auto; -webkit-overflow-scrolling:touch; background-color:rgb(255,255,255); /* animation-name:ani_full; animation-duration:0.2s; animation-iteration-count:1; */ }
+div.layer.agree .layer_content {padding:0 1.5em 1.5em; line-height:1.46666em; font-size:0.9375em;}
+div.layer.agree header {position:-webkit-sticky; position:sticky; /* position:relative; */ top:0; width:100%; height:48px; background-color:#fff;/* transition:all 0.2s; */}
+div.layer.agree header div.inner {position:fixed; top:0; left:0; width:100%; height:inherit; z-index:1000;}
+div.layer.agree header.active div.inner {box-shadow:0px 3px 6px rgba(0,0,0,0.06);}
+div.layer.agree header h1 {padding:0 0 0 22.5px; font-size:1em; font-weight:bold; text-align:left;}
+div.layer.agree .close {/* display:flex; justify-content:center; align-items:center; */ position:fixed; top:0; right:0; width:48px; height:48px; background-color:#fff; color:#fff;}
+div.layer.agree .close button {position:relative; width:100%; height:100%; font-size:0;}
+div.layer.agree .close button::before,
+div.layer.agree .close button::after {content:""; display:block; position:absolute; top:50%; left:50%; width:40%; height:2px; background-color:#222;}
+div.layer.agree .close button::before {transform:translate(-50%,-50%) rotate(45deg)}
+div.layer.agree .close button::after {transform:translate(-50%,-50%) rotate(-45deg)}

@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+.layer.agree header {position:-webkit-sticky; position:sticky; position:relative; top:0; min-height:3em; margin-bottom:1.25em; background-color:#fff; z-index:0; /*transition:all 0.2s;*/}
+.layer.agree header h1 {height:3em; text-align:center; line-height:3em;}
+
+.cpJoinWrap {max-width:720px; margin:0 auto; padding:0 18px 18px; font-family:'Noto Sans KR';}
+.cpJoinWrap .cpJoinContent {padding:35px 0 39px; text-align:center; line-height:1.42222em;}
+.cpJoinWrap .cpJoinContent p.tit {color:#828282; font-size:15px; font-weight:500;}
+.cpJoinWrap .cpJoinContent p.price {margin-top:19px; color:rgb(234,39,58); font-size:13px;}
+.cpJoinWrap .ktCpAgreeWrap {}
+.cpJoinWrap .ktCpAgreeWrap ul {padding:2px 0 5px; background-color:#f4f6f7; border:1px solid #d9dada;}
+.cpJoinWrap .ktCpAgreeWrap ul li + li {margin-top:5px;}
+.cpJoinWrap .agree_item {display:flex; align-items:center; position:relative; width:100%;}
+.cpJoinWrap .agree_item input[type="checkbox"] {position:absolute; opacity:0; z-index:-1;}
+.cpJoinWrap .agree_item span.checkmark {display:block; width:36px; height:36px; background:url('../images/btn_checkbox_off.png') no-repeat center / 40px;}
+.cpJoinWrap .agree_item input[type="checkbox"]:checked + span.checkmark {background-image:url('../images/btn_checkbox_on.png');}
+.cpJoinWrap .agree_item span.txt {display:flex; flex:1; align-items:center; min-height:36px; padding-right:33px;}
+.cpJoinWrap .agree_item.all {padding:3px 0; border:1px solid #d9dada; border-bottom:0 none;}
+.cpJoinWrap .agree_item.all span.txt {color:#363636; font-size:15px; font-weight:700;}
+.cpJoinWrap .agree_item span.txt {color:#414749; font-size:13px; font-weight:400; word-break:keep-all;}
+.cpJoinWrap .agree_item.item span.txt {background:url('../images/Popup_pay_icon_arrow@3x.png') no-repeat right center / 33px;}
+.cpJoinWrap .agree_item.all.charged {border:0 none;}
+.cpJoinWrap .agree_item.all.charged span.txt {background:url('../images/Popup_pay_icon_arrow@3x.png') no-repeat right center / 33px;}
+
+.ktCpJoinBtn {position:fixed; bottom:0; left:0; width:100%; padding:1em; max-width:720px; text-align:center;}
+.ktCpJoinBtn p {display:inline-block; width:80%; margin:0 0 1em; padding:1em; background-color:#7f7f7f; border-radius:100px; color:#fff; font-size:0.875em;}
+.ktCpJoinBtn button {width:100%; min-height:50px; background-color: #222; border-radius:12px; color:#fff;}
+.ktCpJoinBtn button span,
+.ktCpJoinBtn button strong {display:block;}
+.ktCpJoinBtn button strong {font-size:17px; font-weight:700;}
+@media screen and (min-width:720px) {
+	.ktCpJoinBtn {left:50%; transform:translateX(-50%);}
+}
+
+
+div.layer {display:none;}
+div.layer_dim {position:fixed; top:0; right:0; bottom:0; left:0; height:100vh; background-color:rgba(0,0,0,0.5); /* animation-name:ani_opacity; animation-duration:0.2s; animation-iteration-count:1; */  z-index:10;}
+@keyframes ani_opacity { 0% {opacity:0;} 100% {opacity:1;} }
+
+/* 전체화면 팝업 */
+div.layer.agree {position:fixed;  top:1em; right:1em; bottom:1em; left:1em; max-height:100vh; z-index:10000; overflow-y:auto; -webkit-overflow-scrolling:touch; background-color:rgb(255,255,255); /* animation-name:ani_full; animation-duration:0.2s; animation-iteration-count:1; */ }
+div.layer.agree .layer_content {padding:0 1.5em 1.5em; line-height:1.46666em; font-size:0.9375em;}
+div.layer.agree header {position:-webkit-sticky; position:sticky; /* position:relative; */ top:0; width:100%; height:48px; background-color:#fff;/* transition:all 0.2s; */}
+div.layer.agree header div.inner {position:fixed; top:0; left:0; width:100%; height:inherit; z-index:1000;}
+div.layer.agree header.active div.inner {box-shadow:0px 3px 6px rgba(0,0,0,0.06);}
+div.layer.agree header h1 {padding:0 0 0 22.5px; font-size:1em; font-weight:bold; text-align:left;}
+div.layer.agree .close {/* display:flex; justify-content:center; align-items:center; */ position:fixed; top:1em; right:1em; width:48px; height:48px; background-color:#fff; color:#fff;}
+div.layer.agree .close button {position:relative; width:100%; height:100%; font-size:0;}
+div.layer.agree .close button::before,
+div.layer.agree .close button::after {content:""; display:block; position:absolute; top:50%; left:50%; width:40%; height:2px; background-color:#222;}
+div.layer.agree .close button::before {transform:translate(-50%,-50%) rotate(45deg)}
+div.layer.agree .close button::after {transform:translate(-50%,-50%) rotate(-45deg)}

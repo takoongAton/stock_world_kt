@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>KT PASS 해외증권가입</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+	<meta name="description" content="설명설명설명">
+
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/kt_cp_join_free.css">
+
+	<link rel="shortcut icon" type="image/x-icon" href="../images/common/favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=block" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<style>
+html,body,.wrap {height:100%;}
+.cpJoinWrap {max-width:720px; margin:0 auto; font-family:'Noto Sans KR';}
+.cpJoinWrap .cpJoinContent {padding-top:30px; text-align:center;}
+.cpJoinWrap .cpJoinContent .txt_wrap {padding:0 16.66666px;}
+.cpJoinWrap .cpJoinContent .txt_wrap div.tit {color:#212121; font-size:18.33333px; line-height:1.2em; font-weight:bold;}
+.cpJoinWrap .cpJoinContent .txt_wrap p.price {margin-top:19px; font-size:14px;}
+.cpJoinWrap .cpJoinContent .txt_wrap p.price strong {display:inline-block; color:#ff3a4a; font-weight:500; line-height:1em;}
+.cpJoinWrap .cpJoinContent .txt_wrap p.price span {display:inline-block; color:#212121; font-weight:500; line-height:1em;}
+.cpJoinWrap .cpJoinContent .txt_wrap p.txt {margin-top:5px; color:#7c7c7c; font-size:14px; font-weight:400; word-break:break-all;}
+.cpJoinWrap .cpJoinContent div.bnr {margin-top:31.333333px; padding:0 25px;}
+.cpJoinWrap .cpJoinContent div.bnr img {display:block; border-radius:14.33333px; line-height:1;}
+
+.cpJoinWrap .ktCpAgreeWrap {padding:20px 16.666666px 80px;}
+.cpJoinWrap .ktCpAgreeWrap ul {max-height:222.66666px; margin-top:10px; padding-bottom:10px; overflow-y:auto;}
+.cpJoinWrap .ktCpAgreeWrap ul li {min-height:36.66666px;}
+.cpJoinWrap .ktCpAgreeWrap ul li + li {}
+.cpJoinWrap .agree_item {display:flex; align-items:center; position:relative; width:100%;}
+.cpJoinWrap .agree_item label {margin-right:5px;}
+.cpJoinWrap .agree_item input[type="checkbox"] {position:absolute; opacity:0; z-index:-1;}
+.cpJoinWrap .agree_item span.checkmark {display:block; width:24.333333px; height:24.333333px; background:url('../images/terms_check_off.png') no-repeat center / 12px;}
+.cpJoinWrap .agree_item input[type="checkbox"]:checked + span.checkmark {background-image:url('../images/terms_check_on.png');}
+.cpJoinWrap .agree_item span.txt {display:flex; flex:1; align-items:center; min-height:36px; padding-right:33px; }
+.cpJoinWrap .agree_item span.txt {color:#414749; font-size:13px; font-weight:400; word-break:keep-all;}
+.cpJoinWrap .agree_item span.txt.em {color:#ff0000;}
+
+.cpJoinWrap .agree_item.all span.checkmark {display:block; width:24.33333px; height:24.33333px; background:url('../images/terms_check_all_off.png') no-repeat center / 24px;}
+.cpJoinWrap .agree_item.all input[type="checkbox"]:checked + span.checkmark{background-image:url('../images/terms_check_all_on.png');}
+.cpJoinWrap .agree_item.all p {font-size:15px;}
+.cpJoinWrap .agree_item.all p span.txt {display:inline-flex; min-height:auto; padding-right:0; color:#212121; font-size:15px; line-height:24.33333px; font-weight:500;}
+.cpJoinWrap .agree_item.all p strong {display:inline-flex; min-height:auto; color:#ff0000; font-size:15px; line-height:24.33333px; font-weight:500;}
+
+.cpJoinWrap .agree_item.item span.txt {background:url('../images/join_arr_g.png') no-repeat right center / 6px auto;}
+.cpJoinWrap .agree_item.all.charged {border:0 none;}
+.cpJoinWrap .agree_item.all.charged span.txt {background:url('../images/join_arr_g.png') no-repeat right center / 33px;}
+
+
+.cpJoinWrap {display:flex; flex-direction:column; justify-content:space-between; width:100%; height:100%;}
+
+.ktCpJoinBtn {position:fixed; bottom:0; left:0; width:100%; max-width:720px; margin:0 auto; background-color:#fff;}
+
+.ktCpJoinBtn {position:fixed; bottom:0; left:0; width:100%; padding:1em; max-width:720px; text-align:center;}
+.ktCpJoinBtn p {display:inline-block; width:80%; margin:0 0 1em; padding:1em; background-color:#7f7f7f; border-radius:100px; color:#fff; font-size:0.875em;}
+.ktCpJoinBtn button {width:100%; min-height:48px; background-color:#4D3DD3; border-radius:5px; color:#fff;}
+.ktCpJoinBtn button:disabled {background-color:#E9E9EA;}
+.ktCpJoinBtn button span,
+.ktCpJoinBtn button strong {display:block; font-size:16.66666px; line-height:1em; font-weight:700;}
+
+.ktCpJoinBtn button:disabled span,
+.ktCpJoinBtn button:disabled strong {color:#989898;}
+@media screen and (min-width:720px) {
+	.ktCpJoinBtn {left:50%; transform:translateX(-50%);}
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+
+		<div class="cpJoinWrap">
+
+			<div class="cpJoinContent">
+
+				<div class="txt_wrap">
+					<div class="tit">
+						해외주식정보 무료서비스 사용을 위한<br />
+						약관동의가 필요합니다.
+					</div>
+					<p class="price">
+						<strong>무료회원</strong>
+						<span>제공 서비스</span>
+					</p>
+					<p class="txt">가나다라마바사아자차카파파하가나다라마바사
+						거래자 본인확인을 할 수 있는</p>
+				</div>
+				<!-- // txt_wrap -->
+				
+				<div class="bnr"><img src="../images/bnr_sample.png" alt="배너"></div>
+			</div>
+			<!-- // cpJoinContent -->
+
+			<div class="ktCpAgreeWrap">
+				<div>
+					<div class="agree_item all">
+						<label>
+							<input type="checkbox" name="" id="">
+							<span class="checkmark"></span>
+						</label>
+						<p>
+							<span class="txt">전체 동의</span>
+							<strong class="em">(선택항목 포함)</strong>
+						</p>
+					</div>
+				</div>
+				<ul>
+					<li>
+						<div class="agree_item item">
+							<label>
+								<input type="checkbox" name="" id="">
+								<span class="checkmark"></span>
+							</label>
+							<span class="txt">해외주식정보 서비스 이용약관 (필수)</span>
+						</div>
+					</li>
+					<li>
+						<div class="agree_item item">
+							<label>
+								<input type="checkbox" name="" id="">
+								<span class="checkmark"></span>
+							</label>
+							<span class="txt">해외주식정보 개인정보 수집 및 이용동의(필수)</span>
+						</div>
+					</li>
+					<li>
+						<div class="agree_item item">
+							<label>
+								<input type="checkbox" name="" id="">
+								<span class="checkmark"></span>
+							</label>
+							<span class="txt">해외주식정보 개인정보 제3자 제공동의(필수)</span>
+						</div>
+					</li>
+					<li>
+						<div class="agree_item item">
+							<label>
+								<input type="checkbox" name="" id="">
+								<span class="checkmark"></span>
+							</label>
+							<span class="txt">해외주식정보 개인정보 취급 위탁동의(필수)</span>
+						</div>
+					</li>
+					<li>
+						<div class="agree_item item">
+							<label>
+								<input type="checkbox" name="" id="">
+								<span class="checkmark"></span>
+							</label>
+							<span class="txt">해외주식정보 KT 개인정보 제3자 제공동의(필수)</span>
+						</div>
+					</li>
+
+					<li>
+						<div class="agree_item item">
+							<label>
+								<input type="checkbox" name="" id="">
+								<span class="checkmark"></span>
+							</label>
+							<span class="txt">샘플 텍스트입니다.(필수)</span>
+						</div>
+					</li>
+					<li>
+						<div class="agree_item item">
+							<label>
+								<input type="checkbox" name="" id="">
+								<span class="checkmark"></span>
+							</label>
+							<span class="txt em">샘플 텍스트입니다.(선택)</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- // ktCpAgreeWrap -->
+		</div>
+		<!-- // cpJoinWrap -->
+
+		<div class="ktCpJoinBtn">
+			<!-- <p class="agreeAlert">필수약관 동의해주세요.</p> -->
+			<button type="button">
+				<strong>무료서비스 약관동의</strong>
+			</button>
+		</div>
+</div><!-- // wrap -->
+
+
+<div class="layer_dim" style="display:none;"></div>
+<!-- footer 레이어팝업 -->
+<div class="layer agree" id="test1" style="display:none">
+	<div class="layer_inner">
+		<header><h1>이용약관</h1></header>
+		<div class="layer_content">
+			<pre>
+				<strong>제1조(목적)</strong>
+				본 약관은 “PASS스탁" (이하 "서비스")을 제공하는 "주식회사 아톤"(이하 "회사")과 가입자(이하 "가입자")의 이용에 있어 "가입자"와 "회사" 간의 권리, 의무 및 책임 사항, "서비스" 이용 조건 및 절차 등 기본적인 사항을 규정함을 목적으로 합니다.
+				 
+				<strong>제2조(용어의 정의)</strong>
+				① 본 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+				1. “이용계약”이라 함은 서비스 이용을 위해 회사와 가입자 사이에 체결하는 계약을 말합니다.
+				2. “이용요금”이라 함은 이용계약에 따라 가입자가 회사에게 지급하여야 할 금원을 말합니다.
+
+				<strong>제1조(목적)</strong>
+				본 약관은 “PASS스탁" (이하 "서비스")을 제공하는 "주식회사 아톤"(이하 "회사")과 가입자(이하 "가입자")의 이용에 있어 "가입자"와 "회사" 간의 권리, 의무 및 책임 사항, "서비스" 이용 조건 및 절차 등 기본적인 사항을 규정함을 목적으로 합니다.
+				 
+				<strong>제2조(용어의 정의)</strong>
+				① 본 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+				1. “이용계약”이라 함은 서비스 이용을 위해 회사와 가입자 사이에 체결하는 계약을 말합니다.
+				2. “이용요금”이라 함은 이용계약에 따라 가입자가 회사에게 지급하여야 할 금원을 말합니다.
+
+				<strong>제1조(목적)</strong>
+				본 약관은 “PASS스탁" (이하 "서비스")을 제공하는 "주식회사 아톤"(이하 "회사")과 가입자(이하 "가입자")의 이용에 있어 "가입자"와 "회사" 간의 권리, 의무 및 책임 사항, "서비스" 이용 조건 및 절차 등 기본적인 사항을 규정함을 목적으로 합니다.
+				 
+				<strong>제2조(용어의 정의)</strong>
+				① 본 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+				1. “이용계약”이라 함은 서비스 이용을 위해 회사와 가입자 사이에 체결하는 계약을 말합니다.
+				2. “이용요금”이라 함은 이용계약에 따라 가입자가 회사에게 지급하여야 할 금원을 말합니다.
+
+				<strong>제1조(목적)</strong>
+				본 약관은 “PASS스탁" (이하 "서비스")을 제공하는 "주식회사 아톤"(이하 "회사")과 가입자(이하 "가입자")의 이용에 있어 "가입자"와 "회사" 간의 권리, 의무 및 책임 사항, "서비스" 이용 조건 및 절차 등 기본적인 사항을 규정함을 목적으로 합니다.
+				 
+				<strong>제2조(용어의 정의)</strong>
+				① 본 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+				1. “이용계약”이라 함은 서비스 이용을 위해 회사와 가입자 사이에 체결하는 계약을 말합니다.
+				2. “이용요금”이라 함은 이용계약에 따라 가입자가 회사에게 지급하여야 할 금원을 말합니다.
+			</pre>
+		</div>
+		<div class="close"><button type="button"><span>닫기</span></button></div>
+	</div>
+</div>
+
+
+
+
+
+<script>
+$(document).ready(function(){
+	$(".layer .close button").on("click", function(){
+		$(this).parents(".layer").hide();
+		$(".layer_dim").hide();
+	})
+
+	$(".agree_item.item span.txt").on("click", function(){
+		$(".layer.agree").show();
+		$(".layer_dim").show();
+	})
+})
+
+
+let wrap = document.querySelector(".wrap");
+let cpJoinWrap = document.querySelector(".cpJoinWrap");
+console.log(cpJoinWrap.clientHeight);
+</script>
+
+</body>
+</html>
