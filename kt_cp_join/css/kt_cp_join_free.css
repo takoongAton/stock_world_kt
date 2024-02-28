@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 html,body,.wrap {height:100%;}
-.wrap {height:calc(100% - 48px);}
 
 .layer.agree header {position:-webkit-sticky; position:sticky; position:relative; top:0; min-height:3em; margin-bottom:1.25em; background-color:#fff; z-index:0; /*transition:all 0.2s;*/}
 .layer.agree header h1 {height:3em; text-align:center; line-height:3em;}
@@ -76,5 +75,3 @@ div.layer.agree .close button::before,
 div.layer.agree .close button::after {content:""; display:block; position:absolute; top:50%; left:50%; width:40%; height:2px; background-color:#222;}
 div.layer.agree .close button::before {transform:translate(-50%,-50%) rotate(45deg)}
 div.layer.agree .close button::after {transform:translate(-50%,-50%) rotate(-45deg)}
-
-.wrap {height:calc(100% - 48px);}
